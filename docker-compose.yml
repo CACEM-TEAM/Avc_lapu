@@ -32,7 +32,7 @@ services:
       - DB_HOST=mysql
       - DB_USER=app_user
       - DB_PASS=CacemLapu2025
-      - DB_NAME=acv_dema
+      - DB_NAME=acv_demande
       - CORS_ORIGIN=*
     networks:
       - app-network
@@ -69,6 +69,7 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
       - ./backend/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./backend/grant-privileges.sql:/docker-entrypoint-initdb.d/grant-privileges.sql
     networks:
       - db-network
     healthcheck:
