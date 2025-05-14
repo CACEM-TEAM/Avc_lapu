@@ -32,8 +32,8 @@ services:
       - DB_HOST=mysql
       - DB_USER=app_user
       - DB_PASS=CacemLapu2025
-      - DB_NAME=acv_demande
-      - CORS_ORIGIN=http://svrdocker01::5173
+      - DB_NAME=acv_dema
+      - CORS_ORIGIN=*
     networks:
       - app-network
       - db-network
