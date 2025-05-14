@@ -86,8 +86,10 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: unless-stopped
 
-volumes:
+networks:
   db-network:
   app-network:
+
+volumes:
   mysql_data:
     driver: local
