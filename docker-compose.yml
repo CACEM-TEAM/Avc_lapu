@@ -33,7 +33,7 @@ services:
       - DB_USER=app_user
       - DB_PASS=CacemLapu2025
       - DB_NAME=acv_demande
-      - CORS_ORIGIN=http://svrdocker01:5173
+      - CORS_ORIGIN=http://svrdocker01::5173
     networks:
       - app-network
       - db-network
@@ -78,7 +78,7 @@ services:
     networks:
       - db-network
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "svrdocker01", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-root}"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-root}"]
       interval: 10s
       timeout: 5s
       retries: 5
