@@ -11,7 +11,7 @@
           </h1>
         </div>
         <div class="home-tagline animated-fadein-delay">
-          <span class="glass-tag">Ambassadeurs du Cadre de Vie</span>
+          <span class="glass-tag">des Ambassadeurs du Cadre de Vie</span>
         </div>
         <p class="home-subtitle animated-fadein-delay2">
           Gérez vos demandes d'intervention facilement et suivez leur progression en temps réel.
