@@ -87,7 +87,7 @@ services:
     restart: unless-stopped
 
 volumes:
-  db_network:
-  app_network:
+  db-network:
+  app-network:
   mysql_data:
     driver: local
