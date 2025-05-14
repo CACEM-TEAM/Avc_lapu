@@ -1,0 +1,14 @@
+/* 🎨 Forçage du CSS global */
+
+
+
+body {
+  margin: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+  background: #b0c6c5!important; 
+  font-family: 'Poppins', sans-serif;
+ 
+}
+

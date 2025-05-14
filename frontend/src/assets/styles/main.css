@@ -1,0 +1,94 @@
+:root {
+  /* Variables de couleurs principales */
+  --color-primary: #0F214D;    /* Bleu foncé */
+  --gradient-primary: linear-gradient(135deg, #0f214d 0%, #3b6ec1 100%);    /* Dégradé bleu */
+  --color-secondary: #0B5FBO;  /* Bleu moyen */
+  --color-accent: #AAF1FF;     /* Bleu clair */
+  --color-background: #EFEDGE; /* Gris clair */
+}
+
+/* Styles de base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+}
+
+/* Styles des titres */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary);
+}
+
+/* Styles des liens */
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Styles des boutons */
+.btn {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+}
+
+/* Styles des cartes/conteneurs */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(15, 33, 77, 0.1);
+}
+
+/* Bouton glass effet moderne */
+.btn-glass {
+  background: linear-gradient(135deg, #0f214d 0%, #162d68 100%);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 14px 42px;
+  border: none;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 12px rgba(15,33,77,0.2), 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glass::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-glass:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(15,33,77,0.25), 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn-glass:hover::after {
+  opacity: 1;
+} 
