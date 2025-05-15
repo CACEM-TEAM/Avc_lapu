@@ -1563,6 +1563,7 @@ onMounted(() => {
   font-family: monospace;
   white-space: pre-wrap;
   word-break: break-all;
+  display: none;
 }
 
 .debug-info pre {
