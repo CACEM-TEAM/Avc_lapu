@@ -25,7 +25,7 @@ app.use(cors({
 app.use(bodyParser.json());
 
 // Configuration de l'email du validateur
-const VALIDATOR_EMAIL = process.env.VALIDATOR_EMAIL || 'maric.ursulet@cacem-mq.com';
+const VALIDATOR_EMAIL = process.env.VALIDATOR_EMAIL || 'murielle.lapu@cacem-mq.com';
 
 // Configuration de l'API mailer
 const MAILER_API_URL = process.env.MAILER_API_URL || 'https://svrapi.agglo.local/mailer';

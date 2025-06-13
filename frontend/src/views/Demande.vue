@@ -482,7 +482,7 @@ const sendConfirmationEmails = async () => {
   // Envoi des emails de manière non-bloquante
   Promise.all([
     sendMail(form.value.email, 'Confirmation de votre demande d\'intervention', resumeUser),
-    sendMail('pascal.dongar@cacem-mq.com', 'Nouvelle demande d\'intervention reçue', resumeAdmin)
+    sendMail('murielle.lapu@cacem-mq.com', 'Nouvelle demande d\'intervention reçue', resumeAdmin)
   ]).catch(error => {
     console.error('Erreur lors de l\'envoi des emails (non bloquante):', error);
     // On affiche une notification mais on ne bloque pas l'application
@@ -527,7 +527,7 @@ const generateUserEmailContent = () => {
 
       <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(15, 33, 77, 0.1);">
         <p style="color: #666; font-size: 14px; margin: 0;">Si vous avez des questions, n'hésitez pas à nous contacter.</p>
-        <a href="mailto:pascal.dongar@cacem-mq.com" style="color: #0f214d; text-decoration: none; font-weight: 600;">murielle.lapu@cacem-mq.com</a>
+        <a href="mailto:murielle.lapu@cacem-mq.com" style="color: #0f214d; text-decoration: none; font-weight: 600;">murielle.lapu@cacem-mq.com</a>
       </div>
     </div>
   `;
